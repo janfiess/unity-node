@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{F76CBB13-79A3-440A-41E4-AF004CAC8A7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-UnityScript</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_2;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Nodejs\app.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\lib\client.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\lib\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\lib\namespace.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\lib\socket.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\debug\debug.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\debug\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\debug\lib\debug.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\lib\engine.io.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\lib\server.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\lib\socket.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\lib\transport.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\lib\transports\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\lib\transports\polling-jsonp.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\lib\transports\polling-xhr.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\lib\transports\polling.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\lib\transports\websocket.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\base64id\lib\base64id.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\debug\browser.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\debug\debug.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\debug\node.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\debug\node_modules\ms\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\lib\browser.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\lib\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\lib\keys.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\after\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\after\test\after-test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\arraybuffer.slice\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\arraybuffer.slice\test\slice-buffer.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\base64-arraybuffer\grunt.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\base64-arraybuffer\lib\base64-arraybuffer.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\base64-arraybuffer\test\base64-arraybuffer_test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\blob\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\blob\test\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\Gruntfile.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\coverage\prettify.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\tests\tests.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\utf8.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\x.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\bench\parser.benchmark.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\bench\sender.benchmark.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\bench\speed.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\bench\util.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\fileapi\public\uploader.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\fileapi\server.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\serverstats-express_3\server.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\serverstats\server.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\examples\ssl.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\BufferPool.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\BufferUtil.fallback.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\BufferUtil.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\ErrorCodes.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\Receiver.hixie.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\Receiver.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\Sender.hixie.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\Sender.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\Validation.fallback.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\Validation.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\WebSocket.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\WebSocketServer.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\lib\browser.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\commander\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\commander\lib\commander.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\nan\_index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\options\lib\options.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\tinycolor\example.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\node_modules\tinycolor\tinycolor.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\BufferPool.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\Receiver.hixie.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\Receiver.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\Sender.hixie.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\Sender.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\Validation.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\WebSocket.integration.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\WebSocket.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\WebSocketServer.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\autobahn-server.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\autobahn.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\hybi-common.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\test\testserver.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\has-binary-data\gen.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\has-binary-data\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\has-binary-data\node_modules\isarray\build\build.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\has-binary-data\node_modules\isarray\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\has-binary-data\test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-adapter\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\debug\browser.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\debug\debug.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\debug\node.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\debug\node_modules\ms\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\object-keys\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-adapter\node_modules\object-keys\isArguments.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\lib\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\lib\manager.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\lib\on.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\lib\socket.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\lib\url.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-bind\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\component-emitter\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\engine.io.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\socket.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\transport.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\transports\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\transports\polling-jsonp.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\transports\polling-xhr.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\transports\polling.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\transports\websocket.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\lib\xmlhttprequest.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\component-inherit\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\component-inherit\test\inherit.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\lib\browser.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\lib\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\lib\keys.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\after\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\after\test\after-test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\arraybuffer.slice\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\arraybuffer.slice\test\slice-buffer.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\base64-arraybuffer\grunt.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\base64-arraybuffer\lib\base64-arraybuffer.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\base64-arraybuffer\test\base64-arraybuffer_test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\blob\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\blob\test\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\Gruntfile.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\coverage\prettify.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\tests\tests.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\utf8.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\x.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\node_modules\global\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\node_modules\global\test\mocha.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\has-cors\node_modules\global\test\test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\example.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\node_modules\better-assert\node_modules\callsite\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parsejson\test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\example.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\node_modules\better-assert\node_modules\callsite\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseqs\test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\example.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\node_modules\better-assert\node_modules\callsite\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\parseuri\test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\bench\parser.benchmark.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\bench\sender.benchmark.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\bench\speed.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\bench\util.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\fileapi\public\app.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\fileapi\public\uploader.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\fileapi\server.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\serverstats-express_3\server.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\serverstats\server.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\examples\ssl.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\BufferPool.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\BufferUtil.fallback.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\BufferUtil.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\ErrorCodes.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\Receiver.hixie.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\Receiver.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\Sender.hixie.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\Sender.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\Validation.fallback.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\Validation.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\WebSocket.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\WebSocketServer.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\lib\browser.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\commander\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\commander\lib\commander.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\nan\_index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\options\lib\options.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\tinycolor\example.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\node_modules\tinycolor\tinycolor.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\BufferPool.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\Receiver.hixie.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\Receiver.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\Sender.hixie.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\Sender.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\Validation.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\WebSocket.integration.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\WebSocket.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\WebSocketServer.test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\autobahn-server.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\autobahn.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\hybi-common.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\test\testserver.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\example\demo.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\lib\XMLHttpRequest.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-constants.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-events.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-exceptions.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-headers.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-redirect-302.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-redirect-303.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-redirect-307.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-request-methods.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\test-request-protocols.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\node_modules\isarray\build\build.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\node_modules\isarray\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\has-binary\test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\indexof\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\object-component\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\object-component\test\object.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\example.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\node_modules\better-assert\node_modules\callsite\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\parseuri\test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\to-array\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\socket.io.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-parser\bench\bench.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-parser\bench\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-parser\binary.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-parser\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-parser\is-buffer.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-parser\node_modules\benchmark\benchmark.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-parser\node_modules\benchmark\test\test.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-parser\node_modules\component-emitter\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-parser\node_modules\isarray\build\build.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-parser\node_modules\isarray\index.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\coverage\lcov-report\prettify.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\lib\json3.js" />
+     <Compile Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-parser\node_modules\json3\lib\json3.min.js" />
+     <None Include="Assets\JSONObject\readme.txt" />
+     <None Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\LICENSE-GPL.txt" />
+     <None Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\xmlhttprequest\tests\testdata.txt" />
+     <None Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-parser\node_modules\benchmark\LICENSE.txt" />
+     <None Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\LICENSE-MIT.txt" />
+     <None Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\ws\builderror.log.txt" />
+     <None Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\engine.io-parser\node_modules\utf8\LICENSE-MIT.txt" />
+     <None Include="Assets\Nodejs\node_modules\socket.io\node_modules\engine.io\node_modules\engine.io-parser\node_modules\utf8\LICENSE-GPL.txt" />
+     <None Include="Assets\Nodejs\node_modules\socket.io\node_modules\socket.io-client\node_modules\engine.io-client\node_modules\ws\builderror.log.txt" />
+     <None Include="Assets\readme.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
